@@ -1,0 +1,289 @@
+Q1 - Check whether number is postive or not.
+import java.util.*;
+import java.lang.*;
+
+import java.io.*;
+
+public class Test
+{	
+	public static void main(String args[])
+	{ 
+		Scanner in = new Scanner(System.in);
+
+		System.out.println("Give a number");
+
+		int n = in.nextInt();
+
+		if(n>0)	
+		System.out.println("Number is positive");
+
+		else if(n<0)	
+		System.out.println("Number is Negative");
+
+		else System.out.println("Number is zero");
+	}
+}
+
+
+
+
+Q2 - Check whether number is even or not
+import.java.util.*;
+import.java.lang.*;
+import.java.io.*;
+
+public class Test
+{
+	public static void main(String args[])
+	{
+		Scanner in = new Scanner(System.in);
+		
+		System.out.println("Give a number");
+
+		int n = in.nextInt();
+
+		if(n%2==0)
+		System.out.println("Number is even");
+
+		else	
+		System.out.println("Number is odd");
+	}	
+}
+
+
+
+
+
+
+Q3 - Check whether character is vowel or consonant
+import.java.util.*;
+import.java.lang.*;
+import.java.io.*;
+
+public class Test
+{
+	public static void main(String args[])
+	{
+		Scanner in = new Scanner(System.in);
+
+		System.out.println("Give a character");
+
+		char c = in.next().charAt(0);
+		
+		switch(c)
+			{
+				case 'a' : 
+				case 'e'  :
+				case 'i' :
+				case 'o' :
+				case 'u' : System.out.println("Char is vowel");
+				break;
+
+				default : System.out.println("Char is consonant");
+				break ;
+
+			  }
+				
+	}	
+}
+
+
+
+Q4 - Check whether character is alphabet or not
+import.java.util.*;
+import.java.lang.*;
+import.java.io.*;
+
+public class Test
+{
+	public static void main(String args[])
+	{
+        	
+		Scanner in = new Scanner(System.in);
+		
+        	System.out.print("Enter a Character : ");
+        	
+		char c = in.next().charAt(0);
+		
+        	if((c>='a' && c<='z') || (c>='A' && c<='Z'))
+                System.out.println(c + " is an Alphabet");
+        	
+	        else
+       	        System.out.println(c + " is not an Alphabet");
+                 
+	}
+}
+
+
+
+
+Q5 - Find largest among 3 numbers
+import.java.util.*;
+import.java.lang.*;
+import.java.io.*;
+
+public class Test
+{
+	public static void main(String args[])
+	{
+
+
+      		int x, y, z;
+      	
+      		System.out.println("Enter three integers ");
+      
+       		Scanner in = new Scanner(System.in);
+ 
+      		x = in.nextInt();
+     		 y = in.nextInt();
+     		 z = in.nextInt();
+ 
+      		if ( x > y && x > z )
+         	System.out.println("First number is largest.");
+      
+		else if ( y > x && y > z )
+        	 System.out.println("Second number is largest.");
+      
+		else if ( z > x && z > y )
+        	 System.out.println("Third number is largest.");
+      	
+		else   
+         	System.out.println("Entered numbers are not distinct.");
+
+               
+	}
+}
+
+
+
+
+
+
+Q6- Check whether entered year is leap or not
+import.java.util.*;
+import.java.lang.*;
+import.java.io.*;
+
+public class Test
+{
+	public static void main(String args[])
+	{
+
+ 		Scanner in= new Scanner(System.in);
+		
+		int year ;
+               
+		year = in.nextInt();
+               
+                if((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)))
+                System.out.println("Year " + year + " is a leap year");
+               
+		 else
+                System.out.println("Year " + year + " is not a leap year");
+               
+	}
+}
+
+
+
+Q7 - Print "Hello" 5 times.
+import.java.util.*;
+import.java.lang.*;
+import.java.io.*;
+
+public class Test
+{
+	public static void main(String args[])
+	{
+
+ 		for(int i = 0; i < 5; i++)
+		System.out.println("Hello World!");
+	}
+}
+
+
+
+
+Q8 - Calculate sum of natural numbers
+import.java.util.*;
+import.java.lang.*;
+import.java.io.*;
+
+public class Test
+{
+	public static void main(String args[])
+	{
+
+ 		int x, i = 1 ;
+        	int sum = 0;
+        
+		System.out.println("Enter Number of items :");
+        
+		Scanner s = new Scanner(System.in);
+	    
+	        x = in.nextInt();
+        
+		while(i <= x)
+        		{
+            			sum = sum +i;
+            			i++;
+        		}	
+       
+
+		 System.out.println("Sum of "+x+" numbers is :"+sum);	
+
+
+	}
+}
+
+
+
+Q9 - Calculate sum of N using for loop
+import.java.util.*;
+import.java.lang.*;
+import.java.io.*;
+
+public class Test
+{
+	public static void main(String args[])
+	{
+
+ 		int num , sum = 0;
+	
+        	for(int i = 1; i <= num; ++i)
+        		{
+            
+            			sum += i;
+        		}
+
+        	System.out.println("Sum = " + sum);
+	}
+}
+
+
+Q10 - Count number of digits in an integer 
+import.java.util.*;
+import.java.lang.*;
+import.java.io.*;
+
+public class Test
+{
+	public static void main(String args[])
+	{
+
+ 		 Scanner in = new Scanner(System.in);
+
+		int x = in.nextInt();
+		
+		int i =0;
+	
+		while(x>0)
+			{
+			 x=x/10;
+			i++;
+			}
+		System.out.println("The number of digits are " + i);
+
+		
+	}
+}
