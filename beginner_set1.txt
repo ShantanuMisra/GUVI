@@ -1,0 +1,93 @@
+Q1 - Check if a number is positive, negative or zero
+num = int(input("Enter a number: "))
+if num > 0:
+   print("Positive number")
+elif num == 0:
+   print("Zero")
+else:
+   print("Negative number")
+
+
+Q2 - Check if number is even or odd
+num = int(input("Enter a number: "))
+mod = num % 2
+if mod > 0:
+    print("This is an odd number.")
+else:
+    print("This is an even number.")
+
+
+Q3 - Check whether a character is vowel or consonant
+l = input("Input a letter of the alphabet: ")
+if l in ('a', 'e', 'i', 'o', 'u'):
+	print("%s is a vowel." % l)
+else:
+	print("%s is a consonant." % l) 
+
+Q4 - Check whether a character is an alphabet or not
+ch = input("Enter any character: ")
+if((ch>='a' and ch<='z') or (ch>='A' and ch<='Z')):
+	print(ch, "is an alphabet.\n")
+else:
+	print(ch, "is not an alphabet.\n")
+
+
+
+
+Q5 - Find largest among three numbers
+num1 = int(input(Enter First number))
+num2 = int(input(Enter second number))
+num3 = int(input(Enter third number))
+if (num1 >= num2) and (num1 >= num3):
+   
+	largest = num1
+
+elif (num2 >= num1) and (num2 >= num3):
+   
+	largest = num2
+
+else:
+   
+	largest = num3
+
+
+Q6 - Check whether entered number is leap or not
+num = input("Enter year: ")
+if((year%4 == 0) and (year%100 != 0)):
+	print(year, "is a Leap Year.\n")
+elif(year%100 == 0):
+	print(year, "is not a Leap Year.\n")
+elif(year%400 == 0):
+	print(year, "is a Leap Year.\n")
+else:
+	print(year, "is not a Leap Year.\n")
+
+
+Q7 - Write a program to pring "Hello" 5 times
+a=5;
+while a!=0	
+	print "Hello"
+	a=a-1
+
+Q8 - Calculate sum of natural numbers
+n=int(input("Enter a number: "))
+sum1 = 0
+while(n > 0):
+    sum1=sum1+n
+    n=n-1
+print("The sum of first n natural numbers is",sum1)
+
+
+Q9 - Calculate sum of n using for loops
+sum = 0
+for x in [1,2,3,4,5]
+      sum = sum + x
+print(sum)
+
+Q10 - Count number of digits of an integer
+n=int(input("Enter number:"))
+count=0
+while(n>0):
+    count=count+1
+    n=n/10
+print("The number of digits in the number are:",count)
